@@ -5,7 +5,7 @@
 #
 
 # Inherit some common Voltage OS stuff
-TARGET_BOOT_ANIMATION_RES := 1080
+TARGET_BOOT_ANIMATION_RES := 1280
 EXTRA_UDFPS_ANIMATIONS := true
 $(call inherit-product, vendor/voltage/config/common_full_phone.mk)
 
