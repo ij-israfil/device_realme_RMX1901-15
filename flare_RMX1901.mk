@@ -4,10 +4,14 @@
 # SPDX-License-Identifier: Apache-2.0
 #
 
-# Inherit some common Voltage OS stuff
+# Inherit some common Project Flare stuff
 TARGET_BOOT_ANIMATION_RES := 1080
-EXTRA_UDFPS_ANIMATIONS := true
-$(call inherit-product, vendor/voltage/config/common_full_phone.mk)
+TARGET_ENABLE_BLUR := true
+$(call inherit-product, vendor/flare/config/common_full_phone.mk)
+
+# Flags
+WITH_GAPPS := true
+FLARE_MAINTAINER := м∂_ιѕяαƒιℓ
 
 # Inherit from RMX1901 device
 $(call inherit-product, $(LOCAL_PATH)/device.mk)
@@ -21,7 +25,7 @@ PRODUCT_DEFAULT_DEV_CERTIFICATE := vendor/aosp-sign/keys/releasekey
 PRODUCT_BRAND := realme
 PRODUCT_DEVICE := RMX1901
 PRODUCT_MANUFACTURER := realme
-PRODUCT_NAME := voltage_RMX1901
+PRODUCT_NAME := flare_RMX1901
 PRODUCT_MODEL := RMX1901
 
 PRODUCT_GMS_CLIENTID_BASE := android-oppo
