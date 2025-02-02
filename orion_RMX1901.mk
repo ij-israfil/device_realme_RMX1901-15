@@ -4,16 +4,16 @@
 # SPDX-License-Identifier: Apache-2.0
 #
 
-# Inherit some common Rising OS stuff
+# Inherit some common Orion OS stuff
 TARGET_BOOT_ANIMATION_RES := 1080
 TARGET_HAS_UDFPS := true
-DONT_DEXPREOPT_PREBUILTS := true
 $(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 
-# RisingOS Flags
-WITH_GMS := true
-TARGET_DEFAULT_PIXEL_LAUNCHER := true
-	
+# OrionOS Flags
+ORION_MAINTAINER := м∂_ιѕяαƒιℓ
+ORION_MAINTAINER_LINK := https://t.me/IJ_israfil
+ORION_GAPPS := true
+
 # Inherit from RMX1901 device
 $(call inherit-product, $(LOCAL_PATH)/device.mk)
 
@@ -26,7 +26,7 @@ PRODUCT_DEFAULT_DEV_CERTIFICATE := vendor/lineage-priv/keys/releasekey
 PRODUCT_BRAND := realme
 PRODUCT_DEVICE := RMX1901
 PRODUCT_MANUFACTURER := realme
-PRODUCT_NAME := lineage_RMX1901
+PRODUCT_NAME := orion_RMX1901
 PRODUCT_MODEL := RMX1901
 
 PRODUCT_GMS_CLIENTID_BASE := android-oppo
